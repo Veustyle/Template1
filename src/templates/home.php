@@ -2,10 +2,8 @@
 $pageTitle = 'Home';
 $pageDescription = "Page d'accueil";
 
-$styleCSS = '<link rel="stylesheet" href="/css/home2.css">'; ?>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js
-" type="module"></script>
-<?php $pageJS = '<script src="/js/home2.js" type="module"></script>';
+$styleCSS = '<link rel="stylesheet" href="/css/home2.css">';
+$pageJS = '<script src="/js/home2.js" type="module"></script>';
 ?>
 
 
@@ -121,7 +119,7 @@ $styleCSS = '<link rel="stylesheet" href="/css/home2.css">'; ?>
                </div>
 
                <div class="data">
-                  <div class="counter-value" data-count="500 000">0</div>
+                  <div class="counter-value" data-count="500000">0</div>
                   <span>Lignes de code</span>
                </div>
 
