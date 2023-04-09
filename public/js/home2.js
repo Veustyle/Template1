@@ -46,34 +46,27 @@ observer2.observe(document.querySelector('#formation'));
 const observer3 = new IntersectionObserver(entries => {
    entries.forEach(entry => {
       if (entry.isIntersecting) {
-         let compteur = 0;
+        
+         Array.from(document.querySelectorAll('.counter-value')).forEach(counter => {
+            let timeouts = []
+            let limite = parseInt(counter.getAttribute('data-count'))
+            const endTime = 1000; // 1000 millisecondes = 1 seconde
+            const increment = limite / endTime; // le nombre à incrémenter à chaque intervalle de temps
 
-         $(window).scroll(function() {
-            const top = $(`.counter`).offset().top - window.innerHeight;
+            for (let i = 0 ; i <= limite ; i += increment) {
+               const timeout = setTimeout(() => {
 
-            if (compteur == 0 && $(window).scrollTop() > top) {
-               $(`.counter-value`).each(function() {
-                  let $this = $(this);
-                  let countTo = $this.attr('data-count');
-                  $({
-                     countNum: $this.text()
-                  }).animate({
-                        countNum: countTo
-                     },
-                     {
-                        duration: 8000,
-                        easing: 'swing',
-                        step: function() {
-                           $this.text(Math.floor(this.countNum));
-                        },
-                        complete: function() {
-                           $this.text(this.countNum);
-                        }
-                     });
-               });
-               compteur = 1;
+                  counter.innerHTML = Math.floor(i);
+
+                  if (i >= limite) {
+                  for (let j = 0; j < timeouts.length; j++) {
+                     clearTimeout(timeouts[j]);
+                  }
+                  }
+               }, i / increment * 10);
+               timeouts.push(timeout);
             }
-         });
+         })
       }
    })
 })
