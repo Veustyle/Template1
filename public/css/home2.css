@@ -1,6 +1,6 @@
 body {
     color: #283655;
-    background: url('/img/header.jpg') fixed;
+    background: url('/img/header2.jpg');
     background-size: contain;
 }
 h1 {
@@ -134,6 +134,10 @@ h2, h3 {
     background-size: 20px 20px;
     animation: progress-bar-stripes 2s linear infinite;
     border: 1px solid black;
+}
+@keyframes progress-bar-stripes {
+    from  { background-position: 0 0; }
+    to    { background-position: 40px 0; }
 }
 /********************* FORMATIONS  *******************************/
 #formation {
