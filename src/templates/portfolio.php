@@ -29,7 +29,7 @@ $pageJS = '<script src="/js/portfolio.js" type="module"></script>';
 
          <p>Réalisé sans framework.</p><p>Du pur HTML, CSS, PHP et Javascript.</p>
 
-         <a href="http://github.com" target="_blank"><button><svg><use href="/img/sprite.svg#github"></use></svg> Code source</button></a>
+         <a href="https://github.com/Veustyle/Template1" target="_blank"><button><svg><use href="/img/sprite.svg#github"></use></svg> Code source</button></a>
 
       </div>
 
@@ -50,10 +50,39 @@ $pageJS = '<script src="/js/portfolio.js" type="module"></script>';
          <h4><img src="img/html.png" alt="html"> <img src="img/css.png" alt="css"><img src="/img/php.png" alt="php"><img src="/img/js.png" alt="js"> Premier Site</h4>
          <p>Réalisé sans framework.</p><p>Du pur HTML, CSS, PHP et Javascript.</p>
 
-         <a href="http://github.com" target="_blank"><button><svg><use href="/img/sprite.svg#github"></use></svg> Code source</button></a>
+         <a href="https://github.com/Veustyle/Template2" target="_blank"><button><svg><use href="/img/sprite.svg#github"></use></svg> Code source</button></a>
       </div>
 
    </div>
+
+
+   <div class="projet">
+
+      <div class="cadre">
+         <div class="img-container">
+            <a href="https://www.informhacktion.com/todo/index.php" target="_blank">
+               <img src="img/portfolio3.png" alt="projet-3">
+            </a>
+         </div>
+      </div>
+
+
+      <div class="legende">
+
+         <h4><img src="img/html.png" alt="html"> <img src="img/css.png" alt="css"><img src="/img/php.png" alt="php"><img src="/img/js.png" alt="js"> Todolist en Php</h4>
+
+         <p>Réalisé sans framework.</p>
+         <p>un peu d'HTML/CSS</p>
+         <p>beaucoup de PHP</p>
+         <p> une petite base de donnée SQLITE </p>
+         <p>et quelques lignes de Javascript.</p>
+
+         <a href="https://github.com/Veustyle/TodolistPHP" target="_blank"><button><svg><use href="/img/sprite.svg#github"></use></svg> Code source</button></a>
+
+      </div>
+
+   </div>
+
 
 </section>
 
